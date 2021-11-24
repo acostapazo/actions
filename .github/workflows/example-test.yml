@@ -1,0 +1,17 @@
+name: Test Example
+
+on:
+  push:
+    paths:
+      - '.github/workflows/example*.yml'
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test-example:
+    uses: acosta/actions/.github/workflows/example.yml@main
+    with:
+      username: mona
+    secrets:
+      token: ${{ secrets.TOKEN }}
