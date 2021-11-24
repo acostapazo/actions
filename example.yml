@@ -1,0 +1,22 @@
+name: Example
+
+on:
+  workflow_call:
+    inputs:
+      username:
+        required: true
+        type: string
+    secrets:
+      token:
+        required: true
+
+jobs:
+  example:
+    name: Pass input and secrets to my-action
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The user name is ${{ inputs.username }}"
+      - run: echo "🛡️ The secret is private ${{ secrets.token }}"
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.event.repository.name }}."
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository.name }}."
