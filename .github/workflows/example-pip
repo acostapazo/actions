@@ -2,7 +2,8 @@ name: example-pip
 
 on:
   push:
-
+    branches:
+          - main
 
 jobs:
   ci:
