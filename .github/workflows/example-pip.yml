@@ -3,7 +3,7 @@ name: example-pip
 on:
   push:
     branches:
-          - main
+       - main
 
 jobs:
   ci:
