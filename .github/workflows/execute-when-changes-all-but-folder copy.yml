@@ -1,0 +1,15 @@
+name: execute-when-changes-all-but-folder
+
+on:
+  push:
+    paths-ignore:
+      - 'folder/**'
+    branches:
+      - main
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Changed something in the repo"

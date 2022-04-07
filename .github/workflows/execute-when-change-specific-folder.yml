@@ -1,0 +1,15 @@
+name: execute-when-change-specific-folder
+
+on:
+  push:
+    paths:
+      - 'folder/**'
+    branches:
+      - main
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Changed folder"
