@@ -1,2 +1,3 @@
 # actions
-Action Examples
+
+Playground to work with Github Action
