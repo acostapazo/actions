@@ -3,7 +3,7 @@ name: execute-when-change-specific-folder
 on:
   push:
     paths:
-      - 'folder/**'
+      - 'folder/other/**'
     branches:
       - main
 

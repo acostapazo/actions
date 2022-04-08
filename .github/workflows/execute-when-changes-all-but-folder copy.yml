@@ -3,7 +3,7 @@ name: execute-when-changes-all-but-folder
 on:
   push:
     paths-ignore:
-      - 'folder/**'
+      - 'folder/other/**'
     branches:
       - main
 
