@@ -1,3 +1,3 @@
 # actions
 
-Playground to work with Github Action
+Playground to work with Github Action.
