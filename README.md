@@ -1,2 +1,2 @@
 # actions
-Action Example
+Action Examples
